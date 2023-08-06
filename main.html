@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>OMDb</title>
+</head>
+<body>
+    <header> 
+        <div class="nav">
+         <div class="logo">
+            <p>IM <span> DB</span></p>
+         </div>   
+         <!--search container starts -->
+            <div class="search-container">
+                <div class="search-element">
+                    <h3>Search Movie:</h3>
+                    <input type="text" class="form-control" placeholder="Search......." id="movie-search-box" onkeyup="findMovies()">
+                    
+                    <div class="search-list" id="search-list">
+                        <!-- Search results here -->
+                        <div class="search-list-item">
+                            <div class="search-item-thumbnail">
+                                <img src="image/maincover.jpg">
+                            </div>
+                            <div class="search-item-info">
+                                <h3>BAWAAL</h3>
+                                <p>2027</p>
+                                <p>12 june 2023</p>
+                            </div>
+                        </div>
+                         <!-- search results ends here -->
+                    </div>
+                     <!-- search results ends here -->
+                </div>
+            </div>
+        <!-- search container ends-->
+            <div class="button">
+                <button onclick="window.location.href = 'wish.html';">Wishlist</button>
+            </div>
+         </div>
+    </header>
+     <!-- result container -->
+<div class = "wrapper">
+    <div class = "container">
+        <div class = "result-container">
+           <div class = "result-grid" id = "result-grid">
+            <!--   ~~~~~ movie information here  ~~~~~~
+                <div class = "movie-poster">
+                <a href=" https://www.primevideo.com/detail/amzn1.dv.gti.10430bdc-712f-47e8-bdd6-c7d5ce01e643/?ref_=dvm_crs_imd_in_s_bawaal" target="_blank"> <img src = "image/maincover.jpg" alt = "movie poster"></a>
+                    
+            </div>
+                <div class = "movie-info">
+                    <h3 class = "movie-title">BAWAAL</h3>
+                    <ul class = "movie-misc-info">
+                        <li class = "year">Year: 2023</li>
+                        <li class = "rated">Ratings: PG-14</li>
+                        <li class = "released">Released: 15 june 2023</li>
+                    </ul>
+                    
+                    <p class = "genre"><b>Genre:</b> Drama, Action, Romance, Comedy</p>
+                    <p class = "writer"><b>Director:</b>Nitesh Tiwari </p>
+                    <p class = "actors"><b>Starring: </b>Varun Dhawan, Janhvi Kapoor, Manoj Pahwa </p>
+                    <p class = "plot"><b>Plot:</b> Ajay Dixit, an ordinary history teacher in a high school, enjoys mini celebrityhood in his town courtesy the fake image he has built. He shares a strained relationship with his newly-wed wife. Circumstances force him to take a trip to Europe for the World War 2 trail accompanied by his wife. Will his relationship with his wife survive this trip? Will he manage to win the war within?</p>
+                    <p class = "language"><b>Audio Languages:</b>English, हिन्दी, తెలుగు, தமிழ் </p>
+                    <p class = "subtitles"><b><span>Subtitles: </span></b> English, ಕನ್ನಡ, മലയാളം, தமிழ், తెలుగు, العربية, Filipino, Français, Indonesia, Bahasa Melayu, Polski, ไทย</p>
+                    <p class = "ID">5667889</p>    
+                    
+                </div> 
+        </div> -->
+    </div>
+</div> 
+
+<!-- end of result container -->
+<!--main-->
+<main id="main">
+    <div class = "movie">
+         <img src = "image/avatar.jpeg" alt = "movie poster">
+        <div class = "info">
+            <h3>avatar</h3>
+            <p>2020</p>
+        </div> 
+        <div class="overview">
+            <p><b>Genre:</b> Drama, Action, Romance, Comedy</p>
+            <p><b>Director:</b>Nitesh Tiwari </p>
+            <p><b>Starring: </b>Varun Dhawan, Janhvi Kapoor, Manoj Pahwa </p>
+            <p><b>Audio Languages:</b>English, हिन्दी, తెలుగు, தமிழ் </p>
+        </div> 
+    </div>
+</main>
+<!--main-->
+
+
+    <!-- pagination -->
+    <div class="pagination">
+        <div class="page disabled" id="prev"> Previous Page</div>
+        <div class="current" id="current">1</div>
+        <div class="page" id="next">Next Page</div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
