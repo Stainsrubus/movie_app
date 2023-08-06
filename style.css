@@ -372,6 +372,9 @@ padding: 9px;
  background-color: #ccc;
  font-family:cursive;
 }
+.rate input::placeholder{
+  text-align: center;
+}
 
 .rate button{
   border-radius: 6px;
