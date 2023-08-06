@@ -371,6 +371,7 @@ padding: 9px;
  height: 30px;
  background-color: #ccc;
  font-family:cursive;
+ text-align: center;
 }
 .rate input::placeholder{
   text-align: center;
